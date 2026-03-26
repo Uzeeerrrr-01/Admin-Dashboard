@@ -1,0 +1,47 @@
+📝 Description
+
+CourseHub is a full-stack MERN application that allows users to manage courses and instructors in one place. It provides an admin dashboard to create, update, and delete courses and instructors, while users can browse available courses and view instructor details.
+
+⚙️ Requirements
+🧩 Functional Requirements
+Create, update, delete courses
+Create, update, delete instructors
+Assign instructors to courses
+View all courses and instructors
+Dashboard interface for management
+
+🛠️ Technical Requirements
+Frontend: React (Vite + Tailwind CSS)
+Backend: Node.js + Express
+Database: MongoDB Atlas
+API communication (Fetch / Axios)
+Use of environment variables (.env)
+
+🔌 APIs (Combined Structure)
+📚 Courses
+GET    /courses
+GET    /courses/:id
+POST   /courses
+PUT    /courses/:id
+DELETE /courses/:id
+
+👨‍🏫 Instructors
+GET    /instructors
+GET    /instructors/:id
+POST   /instructors
+PUT    /instructors/:id
+DELETE /instructors/:id
+
+🧱 Data Models
+📘 Course
+{
+  title: String,
+  description: String,
+  price: Number,
+  instructor: ObjectId}
+
+  🔗 How Everything Connects (Important for You)
+React frontend sends request → Express backend
+Express handles logic → talks to MongoDB
+MongoDB stores courses & instructors
+Instructor _id is linked inside Course
