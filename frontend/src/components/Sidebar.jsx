@@ -19,21 +19,21 @@ const Sidebar = () => {
 
         <NavLink to="/">
           <div className="flex flex-row gap-1 mt-5 hover:bg-[#ffffff14] items-center h-12 rounded-xl">
-            <img src="square.png" className="w-7 h-7 mt-1 ml-8"/>
+            <img src="square.png" className="w-8 h-8 mt-1 ml-6"/>
             <p className="text-lg font-semibold text-gray-200 hover:text-white">DASHBOARD</p>
           </div>
         </NavLink>
 
         <NavLink to="/courses">
           <div className="flex flex-row gap-1 mt-5 hover:bg-[#ffffff14] items-center h-12 rounded-xl">
-            <img src="book.png" className="w-9 h-7 mt-1 ml-8"/>
+            <img src="book.png" className="w-7 h-5 mt-1 ml-6"/>
             <p className="text-lg font-semibold text-gray-200 hover:text-white">COURSES</p>
           </div>
         </NavLink>
 
         <NavLink to="/instructors">
           <div className="flex flex-row gap-1 mt-5 hover:bg-[#ffffff14] items-center h-12 rounded-xl">
-            <img src="people.png" className="w-14 h-10 mt-1 ml-4"/>
+            <img src="people.png" className="w-8 h-6 mt-1 ml-5"/>
             <p className="text-lg font-semibold text-gray-200 hover:text-white">INSTRUCTOR</p>
           </div>
         </NavLink>

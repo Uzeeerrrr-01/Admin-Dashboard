@@ -70,7 +70,7 @@ function Dashboard() {
             <img src="blue.png" className="w-5 h-5" />
           </div>
           <div className="flex flex-col">
-            <h1 className="font-medium opacity-40 text-sm font-serif">TOTAL COURSES</h1>
+            <h1 className="font-medium opacity-40 text-sm font-serif py-1">TOTAL COURSES</h1>
             <h1 className="text-4xl font-sans font-semibold">
               {loading ? "—" : courses.length}
             </h1>
