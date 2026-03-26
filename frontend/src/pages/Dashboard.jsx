@@ -79,7 +79,7 @@ function Dashboard() {
 
         <div className="w-1/2 h-26 rounded-3xl shadow-[4px_4px_10px_rgba(0,0,0,0.2)] flex flex-row bg-white p-6 gap-2">
           <div className="w-10 h-10 bg-gray-100 rounded-xl flex justify-center items-center mt-1">
-            <img src="peop.png" className="w-5 h-5" />
+            <img src="peop.png" className="w-8 h-5" />
           </div>
           <div className="flex flex-col mt-1">
             <h1 className="font-medium opacity-40 text-sm font-serif">TOTAL INSTRUCTORS</h1>

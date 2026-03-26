@@ -143,7 +143,7 @@ function Courses() {
               <p className="text-center py-10 text-gray-400">No courses found. Add one!</p>
             ) : (
               courses.map((course, index) => (
-                <div key={course._id} className="flex p-4 border-b last:border-b-0 items-center">
+                <div key={course._id} className="flex p-4   items-center">
                   <p className="w-1/12 text-sm font-bold opacity-30">{index + 1}</p>
 
                   <p className="w-1/4 text-sm font-bold">{course.courseName}</p>

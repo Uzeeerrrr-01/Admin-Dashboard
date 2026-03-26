@@ -166,7 +166,7 @@ function Instructors() {
 
         {/* Rows */}
         {!loading && !error && instructors.map((instructor, index) => (
-          <div key={instructor._id} className="flex p-4 items-center border-b last:border-0">
+          <div key={instructor._id} className="flex p-4 items-center">
             <p className="w-1/12 text-sm font-bold opacity-40">{index + 1}</p>
 
             <div className="w-1/4">
