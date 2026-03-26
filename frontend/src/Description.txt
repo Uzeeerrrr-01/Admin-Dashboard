@@ -44,4 +44,4 @@ DELETE /instructors/:id
 React frontend sends request → Express backend
 Express handles logic → talks to MongoDB
 MongoDB stores courses & instructors
-Instructor _id is linked inside Course
+Instructor _id is linked inside Courses.
