@@ -41,7 +41,7 @@ The application follows a **MERN stack architecture** ensuring scalability and p
 
 ---
 
-## ✨ Features
+## ✨ Features!
 
 * ✅ Add new courses
 * ✅ View all courses
