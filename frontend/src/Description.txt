@@ -1,117 +1,64 @@
-## 📌 Project Title
+🏷️ Project Name
+CourseHub
 
-**CourseHub – Course Management System**
+📝 Description
 
----
+CourseHub is a full-stack MERN application that allows users to manage courses and instructors in one place. It provides an admin dashboard to create, update, and delete courses and instructors, while users can browse available courses and view instructor details.
 
-## 📖 Description
+⚙️ Requirements
+🧩 Functional Requirements
+Create, update, delete courses
+Create, update, delete instructors
+Assign instructors to courses
+View all courses and instructors
+Dashboard interface for management
 
-CourseHub is a full-stack web application designed to simplify the management of courses and instructors. It allows users to create, view, update, and delete course data while maintaining a structured and user-friendly interface. The platform is built to help educational institutions, instructors, or learners efficiently organize and access course-related information.
+🛠️ Technical Requirements
+Frontend: React (Vite + Tailwind CSS)
+Backend: Node.js + Express
+Database: MongoDB Atlas
+API communication (Fetch / Axios)
+Use of environment variables (.env)
 
----
+🔌 APIs (Combined Structure)
+📚 Courses
+GET    /courses
+GET    /courses/:id
+POST   /courses
+PUT    /courses/:id
+DELETE /courses/:id
 
-## 🚀 Project Overview
+👨‍🏫 Instructors
+GET    /instructors
+GET    /instructors/:id
+POST   /instructors
+PUT    /instructors/:id
+DELETE /instructors/:id
 
-CourseHub provides a centralized system where:
 
-* 📚 Courses can be managed easily
-* 👨‍🏫 Instructor information is maintained
-* 🔄 Real-time updates are reflected in the UI
-* 🌐 Frontend and backend communicate seamlessly
+🧱 Data Models
+📘 Course
+{
+  title: String,
+  description: String,
+  price: Number,
+  instructor: ObjectId
+}
 
-The application follows a **MERN stack architecture** ensuring scalability and performance.
 
----
+👤 Instructor
+{
+  name: String,
+  email: String,
+  expertise: String
+}
 
-## 🛠️ Tech Stack
+🔗 How Everything Connects (Important for You)
+React frontend sends request → Express backend
+Express handles logic → talks to MongoDB
+MongoDB stores courses & instructors
+Instructor _id is linked inside Course
 
-**Frontend:**
+👉 Example:
 
-* React (Vite)
-* Tailwind CSS
-
-**Backend:**
-
-* Node.js
-* Express.js
-
-**Database:**
-
-* MongoDB (MongoDB Atlas)
-
----
-
-## ✨ Features!
-
-* ✅ Add new courses
-* ✅ View all courses
-* ✅ Update course details
-* ✅ Delete courses
-* ✅ Manage instructors
-* ✅ RESTful API integration
-* ✅ Responsive UI
-
----
-
-## 🔗 API Endpoints
-
-### Courses
-
-* `GET /courses` → Get all courses
-* `POST /courses` → Create a course
-* `PUT /courses/:id` → Update course
-* `DELETE /courses/:id` → Delete course
-
-### Instructors
-
-* `GET /instructors` → Get all instructors
-* `POST /instructors` → Add instructor
-
----
-
-## ⚙️ How It Works
-
-1. User interacts with the frontend UI
-2. React sends requests to the backend API
-3. Express server processes the request
-4. Data is stored/retrieved from MongoDB
-5. Response is sent back and displayed in UI
-
----
-
-## 📦 Installation & Setup
-
-```bash
-# Clone repository
-git clone <your-repo-link>
-
-# Install frontend dependencies
-cd frontend
-npm install
-npm run dev
-
-# Install backend dependencies
-cd backend
-npm install
-npm run server
-```
-
----
-
-## 🎯 Purpose of the Project
-
-The main goal of this project is to:
-
-* Learn full-stack development (MERN)
-* Understand API integration
-* Practice CRUD operations
-* Build a real-world usable system
-
----
-
-## 📌 Future Enhancements
-
-* 🔐 Authentication (Login/Signup)
-* 📊 Dashboard analytics
-* 📁 File uploads (course materials)
-* 🌍 Deployment improvements
+course.instructor → instructor._id
